@@ -1,0 +1,21 @@
+<input type="text" id="txt">
+<button onclick="check()">Click</button>
+<p id="para">err</p>
+<script type="text/javascript">
+	/*
+		(username)@domainname
+	*/
+	check = function(){
+		pattern = /^([a-zA-Z0-9][a-zA-Z0-9_\.]+[a-zA-Z0-9])@([a-z0-9][a-z0-9\-]+[a-z0-9])\.([a-z]{2,})(\.[a-z]{2,})?$/
+		rec = document.getElementById("txt").value;
+		result = pattern.test(rec);
+		// console.log(result);
+		// console.log(typeof result);
+		if(result == true){
+			document.getElementById("para").innerHTML = "ok";
+		}
+		else{
+			document.getElementById("para").innerHTML = "Invalid";
+		}
+	}
+</script>

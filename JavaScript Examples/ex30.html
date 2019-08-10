@@ -1,0 +1,19 @@
+<input type="text" id="txt">
+<button onclick="check()">Click</button>
+<p id="para">err</p>
+<script type="text/javascript">
+	/*		/[a-z][0-9][A-Z]/ 	  sameer.patil_400  */
+	check = function(){
+		pattern = /^[a-zA-Z0-9][a-zA-Z0-9_\.]+[a-zA-Z0-9]$/
+		rec = document.getElementById("txt").value;
+		result = pattern.test(rec);
+		// console.log(result);
+		// console.log(typeof result);
+		if(result == true){
+			document.getElementById("para").innerHTML = "ok";
+		}
+		else{
+			document.getElementById("para").innerHTML = "Invalid";
+		}
+	}
+</script>

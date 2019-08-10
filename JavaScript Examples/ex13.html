@@ -1,0 +1,59 @@
+<script type="text/javascript">
+	
+x=[10,40,70.7,89,90,40,"3000"];
+console.log(x);
+
+pos = x.indexOf(80);
+console.log(pos);
+
+pos = x.indexOf(70.7);
+console.log(pos);
+
+pos = x.indexOf("70.7");
+console.log(pos);
+
+pos = x.indexOf(40);
+console.log(pos);
+
+pos = x.lastIndexOf(40);
+console.log(pos);
+
+pos = x.indexOf(Number("70.7"));
+console.log(pos);
+
+data = 3000;
+pos = x.indexOf(data.toString());
+console.log(pos);
+
+console.log(typeof x);
+
+data=10;
+console.log(typeof data);
+
+data=10.89;
+console.log(typeof data);
+
+data=true;
+console.log(typeof data);
+
+data=document;
+console.log(typeof data);
+
+dob = "10/2/2000";
+console.log(dob);
+console.log(typeof dob);
+
+ans = dob.split("/");
+console.log(ans);
+
+year = ans[2];
+console.log(year);
+
+curdate = new Date();
+console.log(curdate);
+
+curyear = curdate.getFullYear();
+console.log(curyear);
+
+console.log(curyear - year);
+</script>

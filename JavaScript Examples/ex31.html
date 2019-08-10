@@ -1,0 +1,24 @@
+<input type="text" id="txt">
+<button onclick="check()">Click</button>
+<p id="para">err</p>
+<script type="text/javascript">
+	/*		/[a-z][0-9][A-Z]/ 	  
+		(yahoo).(com) , 
+		(google).(co)(.in)?
+		(99acres).com
+		(php-training).(in)
+	 */
+	check = function(){
+		pattern = /^([a-z0-9][a-z0-9\-]+[a-z0-9])\.([a-z]{2,})(\.[a-z]{2,})?$/
+		rec = document.getElementById("txt").value;
+		result = pattern.test(rec);
+		// console.log(result);
+		// console.log(typeof result);
+		if(result == true){
+			document.getElementById("para").innerHTML = "ok";
+		}
+		else{
+			document.getElementById("para").innerHTML = "Invalid";
+		}
+	}
+</script>

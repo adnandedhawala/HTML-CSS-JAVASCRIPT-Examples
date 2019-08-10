@@ -1,0 +1,22 @@
+<body onload="show()">
+<script type="text/javascript">
+function show(){
+	rec = [{name:"Nike",count:10},{name:"Puma",count:20},{name:"Adidas",count:30}];
+	// console.log(rec);
+	str = "";
+	for(ans in rec){
+		// console.log(ans)
+		// console.log(rec[ans]);
+		// console.log(rec[ans].name);
+		// console.log(rec[ans].count);
+		str = str + "<li>" +rec[ans].name.toLowerCase() + " </li>";
+	}
+	// console.log(str);
+	document.getElementById("brand").innerHTML = str;
+}
+</script>
+
+<ul id="brand">
+	
+</ul>
+</body>

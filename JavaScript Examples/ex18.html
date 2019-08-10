@@ -1,0 +1,32 @@
+<html>
+<body>
+	<ul>
+		<li>Enter No 1</li>
+		<li><input type="text" id="txt1"></li>
+		<li>Enter No 2</li>
+		<li><input type="text" id="txt2"></li>
+		<li><input type="button" value="Enter" onclick="validate()" /></li>
+		<li id="errmsg">jjj</li>
+	</ul>
+
+	<script type="text/javascript">
+		function validate(){
+			// alert(1)
+			rec1 = document.getElementById("txt1").value;
+			// console.log(rec1);
+			// console.log(typeof rec1);
+			rec2 = document.getElementById("txt2").value;
+			// console.log(rec1.length);
+			if(rec1.length == 0){
+				document.getElementById("errmsg").innerHTML = "no1 empty";
+			}
+			else if(rec2.length ==0 ){
+				document.getElementById("errmsg").innerHTML = "no2 empty";
+			}
+			else{
+				document.getElementById("errmsg").innerHTML = Number(rec1) + Number(rec2);
+			}
+		}
+	</script>
+</body>
+</html>

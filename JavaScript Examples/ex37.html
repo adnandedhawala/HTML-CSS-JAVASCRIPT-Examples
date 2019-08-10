@@ -1,0 +1,13 @@
+<body onload="show()">
+<script type="text/javascript">
+	// square of 10 is 100
+	function show(){
+		setInterval(function(){
+			rec = new Date();
+			// console.log(rec);
+			document.getElementById("divdata").innerHTML = rec.getHours() + ":" + rec.getMinutes() + ":" + rec.getSeconds();
+		},1000);
+	}
+</script>
+<div id="divdata"></div>
+</body>

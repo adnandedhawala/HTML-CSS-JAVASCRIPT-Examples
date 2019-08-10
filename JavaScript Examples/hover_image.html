@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.thumb_container img{
+			margin: 10px;
+		}
+		.thumb_container img:hover{
+			/*margin: 10px;*/
+			border: 1px solid;
+		}
+		.container{
+			margin: auto;
+			width: 100%;
+			text-align: center;
+			/*max-height: 400px;*/
+		}
+		.thumb_container{
+			margin: auto;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function change(e) {
+			// console.log(e)
+			rec=e.getAttribute("src");
+			path=rec.replace("small","big");
+			console.log(path);
+			document.getElementById("mainimg").setAttribute("src",path);
+		}
+	</script>
+</head>
+<body>
+	<div class="thumb_container">
+		<img src="small/img1.jpeg" onmouseover="change(this)">
+		<img src="small/img2.jpeg" onmouseover="change(this)">
+		<img src="small/img3.jpeg" onmouseover="change(this)">
+	</div>
+	<div class="container">
+		<img src="big/img1.jpeg" height="500px" id="mainimg">
+	</div>
+
+</body>
+</html>

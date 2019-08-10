@@ -1,0 +1,54 @@
+<html>
+<body>
+	<div class="container">
+		<div class="ticket" onclick="calculate(1,100,this)">1 <br /> 100</div>
+		<div class="ticket" onclick="calculate(2,150,this)">2 <br /> 150</div>
+		<div class="ticket" onclick="calculate(3,180,this)">3 <br /> 180</div>
+		<div class="ticket" onclick="calculate(4,110,this)">4 <br /> 110</div>
+		<div class="ticket" onclick="calculate(5,190,this)">5 <br /> 190</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div class="container">
+		Ticket No : <span id="span1">2,3</span> <br />
+		Ticket Amount : <span id="span2">220</span> <br />
+	</div>
+	<style type="text/css">
+		.container{width:600px;margin:auto;}
+		.ticket{width:50px;height:50px;background:lightgray;border-radius:5px;float: left;text-align: center;margin:5px 20px;cursor: pointer;}
+	</style>
+	<script type="text/javascript">
+		arr_no = [];
+		arr_amt = [];
+		function calculate(no,amt,curtag){
+			// console.log(no)
+			// console.log(amt)
+			// console.log(curtag)
+
+			curtag.style.background = "red";
+
+			pos = arr_no.indexOf(no);
+			alert(pos);
+			if(pos==-1)
+			{	
+				arr_no.push(no)			
+				arr_amt.push(amt)	
+				
+				// console.log(arr_no)		
+				// console.log(arr_amt)	
+
+				f1 = arr_no.join(",");
+				// console.log(f1);
+				f2 = eval( arr_amt.join("+") );
+				// console.log(f2);
+
+				document.getElementById("span1").innerHTML = f1;
+				document.getElementById("span2").innerHTML = f2;
+				alert("ticket added");
+			}
+			else{
+				alert("ticket already selected");
+			}
+		}
+	</script>
+</body>
+</html>

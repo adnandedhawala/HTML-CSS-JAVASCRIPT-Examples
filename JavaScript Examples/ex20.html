@@ -1,0 +1,29 @@
+<img src="tshirt1.jpeg" id="imgdata" />
+
+<button onclick="get_size()">Enter</button>
+<button onclick="set_path()">set</button>
+
+<div>
+	<span id="wi">1</span>
+	<span id="he">2</span>
+	<span id="path">2</span>
+</div>
+
+<script>
+	function get_size(){
+		console.log(document.getElementById("imgdata"))
+		height = document.getElementById("imgdata").height;
+		width = document.getElementById("imgdata").width;
+		path = document.getElementById("imgdata").src;
+
+		document.getElementById("wi").innerHTML = width;
+		document.getElementById("he").innerHTML = height;
+		// document.getElementById("path").innerHTML = path;
+		document.getElementById("path").innerHTML = document.getElementById("imgdata").getAttribute("src");
+	}
+	function set_path(){
+		document.getElementById("imgdata").setAttribute("src","tshirt2.jpeg");
+		document.getElementById("imgdata").setAttribute("width","100px");
+		document.getElementById("imgdata").setAttribute("height","250px");
+	}
+</script>

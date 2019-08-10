@@ -1,0 +1,24 @@
+<div class="thumb_container">
+	<img src="small/img1.jpeg" width="60px" height="100px"  onmouseover="change(this)">
+	<img src="small/img2.jpeg" width="60px" height="100px" onmouseover="change(this)">
+	<img src="small/img3.jpeg" width="60px" height="100px" onmouseover="change(this)">
+</div>
+<div class="container">
+	<img src="big/img1.jpeg" id="mainimg" >
+</div>
+<style type="text/css">
+	.container{width:399px;height:832px;margin:auto}
+	.thumb_container{width:399px;height:102px;margin: auto;}
+	.thumb_container img{margin:0 10px;}
+	.thumb_container img:hover{border:1px solid;}
+</style>
+<script type="text/javascript">
+	function change(curtag){
+		// console.log(curtag);
+		path = curtag.getAttribute("src");
+		// console.log(path);
+		newpath = path.replace("small","big");
+		// console.log(newpath);
+		document.getElementById("mainimg").setAttribute("src",newpath);
+	}
+</script>

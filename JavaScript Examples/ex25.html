@@ -1,0 +1,14 @@
+<div name="divdata">div 1</div>
+<div name="divdata">div 2</div>
+<div name="divdata">div 3</div>
+
+<button onclick="check()">Click</button>
+<script type="text/javascript">
+	function check(){
+		// console.log(document);
+		// console.log(document.getElementsByName("divdata"));
+		document.getElementsByName("divdata")[0].style.color="red";
+		document.getElementsByName("divdata")[1].style.fontSize="30px";
+		document.getElementsByName("divdata")[2].style.backgroundColor="#eee";
+	}
+</script>
