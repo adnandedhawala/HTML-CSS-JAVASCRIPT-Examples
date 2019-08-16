@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		txtxheck=function(){
+			var data=document.getElementById('txt').value;
+			if(data.length==0){
+				document.getElementById('txt').style.border = "2px solid #e00";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="txtxheck()">Check</button>
+</body>
+</html>

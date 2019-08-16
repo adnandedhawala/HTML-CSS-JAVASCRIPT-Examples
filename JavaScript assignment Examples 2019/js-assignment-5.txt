@@ -1,0 +1,61 @@
+Javascript Exercise:
+
+1) write a program to get total no of words from the given string. (hint: use split() method )
+[ Note: your input string is => Since JavaScript is a loosely-typed, dynamic and expressive language, you may accomplish the same task in various ways.]
+
+2) Write a JavaScript program to capitalize the first letter of each word of a given string. 
+[ Note: your input string is => JavaScript is a loosely typed , output=> JavaScript Is A Loosely Typed]
+
+3) Write a JavaScript program to display the current day and time in the following format. (HInt: use Date() class)
+[
+	Output : 22/7/2019 10:05:00
+]
+
+4) Write a JavaScript program to get the current date.
+[
+	Output : 22-7-2019
+]
+
+5) Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+
+here get value from textbox & on button click show result in paragraph.
+[ input : 60 in degree & output : 140 in Fahrenheit]
+
+6) Write a JavaScript program to get the website URL of current page & show result in console (loading page).
+
+7) Write a JavaScript exercise to get the extension of a filename & show result in console (loading page). 
+
+8) Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7.
+[ here get input from textbox & show answer as yes or no in paragraph , do the procedure on button click ]
+
+9) Write a JavaScript program to find the largest of three given integers.
+[ here : start with 3 variable having any integer value & do the needful with result in console]
+
+10) Write a JavaScript program to reverse a given string
+[ input : hello , output : olleh ]
+[note: do not use reverse() function here]
+
+11) Write a JavaScript program to find the longest string from a given array.
+[
+	input=> ["hello" ,"hello world" ,"how are you everyone"]
+	answer=>longest string is in array => how are you everyone
+]
+
+12) Write a JavaScript program to swap the first and last elements of a given array of integers.
+
+[ input : [10,20,30,40]  output: [40,20,30,10] ]
+
+13)  Write a JavaScript program to concatenate two strings 
+[ input : hello & world ]
+[ output : helloworld]
+
+14)  Write a JavaScript program to concatenate two strings except their first character.
+[ input : hello & world ]
+[ output : elloorld ]
+
+15) Write a JavaScript program to count the number of vowels in a given string.  (ask doubt)
+
+[ input : hello world ]
+[ output :  3 [i.e. eoo]  ]
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		displayStr = ()=>{
+			var arr=[];
+			function getChar(){
+				var ans = Math.round(10+(Math.random()*25));
+				arr.push(ans.toString(36));
+				// random between 10 and 35 both inclusive
+			}
+			getStr = ()=>{
+				// var arr = [];
+
+				for(var i = 0;i<5;i++){
+					getChar();
+				}
+			}
+			getStr();
+			var data = arr.join("");
+			alert(data);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="displayStr()">display</button>
+</body>
+</html>

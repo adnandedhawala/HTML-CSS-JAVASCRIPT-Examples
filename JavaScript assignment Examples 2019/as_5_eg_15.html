@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		checkVowels = ()=>{
+			var data = document.getElementById('txt').value;
+			var ans = data.split("");
+			var count = 0;
+			ans.forEach(countVowels);
+
+			alert(count);
+
+			function countVowels(value){
+				if(value == 'a'||value=='e'||value == 'o'||value =="i"||value == "u"){
+					count++;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="checkVowels()">Enter</button>
+</body>
+</html>
+
+<!-- instead of countVowels if callback function is tried it gives errors -->

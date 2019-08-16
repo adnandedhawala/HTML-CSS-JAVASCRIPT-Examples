@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		checkNum = ()=>{
+			var data = document.getElementById('txt').value;
+			if(data%3==0||data%7==0){
+				document.getElementById('para').innerHTML = "yes";
+			}else{
+				document.getElementById('para').innerHTML = "no";
+
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="txt" placeholder="Enter a number">
+	<button onclick="checkNum()">Enter</button>
+	<hr>
+	<p id="para"></p>
+</body>
+</html>

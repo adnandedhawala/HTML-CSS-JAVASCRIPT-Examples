@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		findLargest = ()=>{	
+			var arr = [];
+			for(var i = 0;i<3;i++){
+				arr[i] = document.getElementsByName('txt')[i].value;
+			}
+			arr.sort((a,b)=>{
+				return b-a;
+			});
+
+			console.log(arr[0]);
+		}
+	</script>
+</head>
+<body>
+	<input type="number" name="txt"><br>
+	<input type="number" name="txt"><br>
+	<input type="number" name="txt"><br>
+	<button onclick="findLargest()">Enter</button>
+</body>
+</html>

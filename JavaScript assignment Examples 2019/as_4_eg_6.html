@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		showValue = ()=>{
+			var data = document.getElementById('txt1').value;
+			document.querySelector("#txt2").value = data;
+		}
+		
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1" placeholder="Enter some text"><br>
+	<input type="text" id="txt2" ><br>
+	<hr>
+	<button onclick="showValue()">Enter</button>
+</body>
+</html>

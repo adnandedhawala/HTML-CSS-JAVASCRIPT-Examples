@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		addFunc= ()=>{
+			document.querySelector('#txt').addEventListener('mouseover',displaytxt);
+		}
+		function displaytxt(){
+			console.log("done");
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<br>
+	<button onclick="addFunc()">Add</button>
+</body>
+</html>

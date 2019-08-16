@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		changeNum = ()=>{
+			var data = document.getElementById('txt').value;
+			var ans = data.split("").reverse().join("");
+			if(data == ans){
+				alert("yes");
+			}else{
+				alert("no");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="changeNum()">Enter</button>
+</body>
+</html>

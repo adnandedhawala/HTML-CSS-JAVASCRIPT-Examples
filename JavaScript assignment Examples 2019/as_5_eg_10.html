@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		reverseString = ()=>{
+			var data=[];
+			data = document.getElementById('txt').value;
+			var ans = [];
+			for(var i =0;i<data.length;i++){
+				ans[i] = data[data.length-i-1];
+			}
+			ans = ans.join("");
+			alert(ans);
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt"><br>
+	<button onclick="reverseString()"> ENTER </button>
+</body>
+</html>

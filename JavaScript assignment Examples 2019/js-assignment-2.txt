@@ -1,0 +1,32 @@
+Javascript Exercise:
+
+1) create a textbox (with id txt). create a paragraph (having id para ). onclick event get value from textbox and display it within paragraph ( hint: you may use innerText or innerHTML , get the diff. between innerText,innerHTML)
+
+2) create a textbox (with id txt). create a paragraph (having id para ).onclick event get only number from textbox & display square of the no which you have entered ( hint: use Math library )
+
+3) create an array having any three number. show array structure within console. print individual values also.
+
+4)  create an array having any three number. extract each values using for loop
+
+5)  create an array having any three number. extract each values using while loop
+
+6) create an array having any three number. extract each values using for in loop ( show both index & value in console )
+
+7) create an array having  any three number. use any loop and show the sum of all value in console
+
+
+8) generate a series from 1 to 10 & show square of odd number , cube of even no ( hint: use any loop & modulus opearator )
+
+9) create an array with any three value . on button click add value 10 within an array (i.e at the end )
+
+10) create an array with any three value . on button click add value 20 within an array (i.e at start position )
+
+11) create an array with any five value . on button click remove last value
+
+12) create an array with any five value . on button click remove first value
+
+13) create an array with five value (i.e 10,20,30,40,50) . now search value 10 & 100 from the given array & print its position.
+
+
+
+

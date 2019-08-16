@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		checkVal = function(){
+			var data = document.getElementById('txt').value;
+			data = parseInt(data);
+			if(Number.isNaN(data)){
+				alert("string");
+			}else{
+				alert("Number");
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="checkVal()">Enter</button>
+</body>
+</html>

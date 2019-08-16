@@ -1,0 +1,61 @@
+1) Write a JavaScript function that reverse a number. 
+Input : 24678
+Output : 87642
+(Hint: You can use js inbuilt function )
+
+2)  Write a JavaScript function that checks whether a passed string is palindrome or not?
+
+3) Write a JavaScript function that returns a passed string with letters in alphabetical order?
+
+input: ernshw
+output : ehnrsw
+
+4) Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
+
+input : hello world how are you
+output : Hello World How Are You
+
+5) Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+
+input : hello web developer , how are you?
+output : developer
+
+6) Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string?
+
+input : hello world
+output : 3 (i.e eoo)
+
+7) Write a JavaScript function which accepts an argument(i.e. parameter) and returns the type  (ask doubt)
+
+input parameter : "hello"
+output : string
+
+input parameter : true
+output : boolean
+
+8)  Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
+
+input : [10,20,30,40,50,60]
+output : 20 & 50 ( i.e. second lowest : 20 , second largest :50)
+
+9) Write a JavaScript function to extract unique characters from a string. 
+input : helloworld
+output: helowrd
+
+10) Write a JavaScript function that generates 5 random characters
+output : fdasc or xbswer or aswer or yueiw ( ans so on ...)
+
+11) Write a JavaScript function that generates 5 random numbers
+output : 12652 or 32456 or 98426 ( ans so on ...)
+
+12) Write a JavaScript function that accept a list of user names as input and returns the longest user name as output.
+
+input : ['sunil','anil','ramesh','surya','suryaprakash']
+output : suryaprakash (longest name in array)
+
+13) Write a JavaScript function & return screen width & screen height
+( hint: use screen object in this case )
+
+14) write a javascript program to open a new window , with width:300px & height:300px (hint use window=> object  )
+
+15) writea a javascript program to get height & width of the document. 

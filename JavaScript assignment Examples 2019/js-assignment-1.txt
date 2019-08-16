@@ -1,0 +1,60 @@
+Javascript Exercise:
+
+1) Create a variable called userName, assign the value "Ajay" to it. and check your answer in console
+
+2)  Create a variable called x, assign the value 10
+	Create a variable called y, assign the value 20
+	Create a variable called sum, assign the sum of x&y
+	and check your answer in console
+
+3) Display the sum of 15 + 20, using two variables: x and y
+	& show value in alert box
+
+4) get any value from prompt box and show the same value in console using log function
+
+5) Create a variable called answer, assign data1 * data2 to it, and display the result on browser using write() function
+	here: data1 will have value 100 & data2 will have value 200
+
+6) create a variable data1 & data2 having value ajay & vijay respectively. add data1 & data2 using math ( + ) operator & understand the concept of concatenation operator  
+
+7) create a variable data1 , store 10.90 in data1. and check the data type of data1 in console
+
+8) create two variable having values 10 & 20. & show the multiplication value in alert box
+
+9) create two variable having values 10 & 20. & show the division answer on browser using write() method
+
+10) there is a variable data having value as 10 . find the remainder ( hint : use modulus operator)
+
+11) create a function ( name myfunc() ) and call the same function on button click ( hint : within function print test data using console)
+
+12) create a function ( name myfunc() ) and call the same function using keyup event using textbox ( hint : within function print test data using console)
+
+13) create a function ( name myfunc() ) and call the same function using resize event ( hint : within function print test data using console)
+
+14) create a function ( name myfunc() ) and pass 2 value having number 10 & 20 , do the multiplication & show the result in console  ( hint: use button & onclick event)
+
+15) create a paragraph with some dummy content , on button click change the paragraph value ( hint : use innerHTML & querySelector() functionality) 
+
+16) create a paragraph with some dummy content , on button double click change the paragraph background color to grey ( hint : use style & getElementById() functionality) 
+
+17) create a paragraph with some dummy content , on mouse over change the paragraph content ( hint:  no hint in this case )
+
+18) create a paragraph with some dummy content , on hover apply grey color & on mouse out apply blue color
+
+19) show 1 to 5 number on browser with break using for loop
+
+20) show only even numbers between 1 to 10 using for while loop , show results in console
+
+21) create a variable data , store any number in data & find out whether the no is even or odd ( hint : use if-else & mod operator )
+
+22) create a textbox (with id txt) & get any value from text box using button & show result in console ( hint: use onclick event & value property for textbox )
+
+23) generate 2 textbox (having id txt1,txt2 respectively) , get values of both in data1 & data2. now show the sum of values in paragraph having id para ( note : if you recieve data from textbox then please check data type before you do the sum)
+
+24) create a textbox (with id txt) & get value from textbox & check whether the entered value is string or number (hint: use isNaN() & if-else). show the result in console
+
+25) create a textbox (with id txt) & get value from textbox , in case textbox is empty then please show textbox border with color red & border width 2px.
+
+26) create a textbox (with id txt) & get value.
+if the value is string then show error in paragraph as only number is required. 
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		checkWords = ()=>{
+			var ans = [];
+			var data = document.getElementById('txt').value;
+			var arr = data.split(" ");
+			var temp;
+
+			arr.forEach((item,index)=>{
+				ans[index] = item.length;
+			});	
+			temp = ans[0];
+			for(var i= 1;i<ans.length;i++){
+				if(ans[i]>temp){
+					temp=ans[i];
+				}
+			}
+			var index = ans.indexOf(temp);
+			alert(arr[index]);
+		}
+
+
+	</script>
+</head>
+<body>
+	<input type="text" id="txt" size="100">
+	<button onclick="checkWords()">Click</button>
+</body>
+</html>

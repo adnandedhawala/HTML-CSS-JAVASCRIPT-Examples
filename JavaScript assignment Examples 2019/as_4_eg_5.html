@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		change1 = ()=>document.getElementsByName('txt')[0].value = "change done.";
+		change2 = ()=>document.getElementsByName('txt')[1].value = "change done.";
+		change3 = ()=>document.getElementsByName('txt')[2].value = "change done.";
+
+	</script>
+</head>
+<body>
+	<input type="text" name="txt" value="one"><button onclick="change1()">Enter</button><br>
+	<input type="text" name="txt" value="one"><button onclick="change2()">Enter</button><br>
+	<input type="text" name="txt" value="one"><button onclick="change3()">Enter</button>
+
+</body>
+</html>
+
+
+<!-- 
+The getElementsByName() method returns a collection of all elements in the document with the specified name (the value of the name attribute), as a NodeList object.
+
+The NodeList object represents a collection of nodes. The nodes can be accessed by index numbers. The index starts at 0. -->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		calculate= function(value,callback){
+			console.log(value);
+			callback();
+		}
+
+		callback=function(){
+			alert(1);
+		}
+	</script>
+</head>
+<body>
+	<input type="text" onblur="calculate('hello')" >
+	<input type="text" onfocus ="calculate('goodbye')" >
+
+</body>
+</html>
+
+<!-- https://www.sitepoint.com/callbacks-javascript/ -->

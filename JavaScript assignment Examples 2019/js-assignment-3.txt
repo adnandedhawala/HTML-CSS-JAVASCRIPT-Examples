@@ -1,0 +1,39 @@
+Javascript Exercise:
+
+1) create a text box , get value from the same. do the validation for mobile number & show result in paragraph ( below textbox)
+
+2) create a text box , get value from the same. do the validation for emailid  & show result in paragraph ( below textbox)
+
+3) create a text box , get value from the same. do the validation for name  & show result in paragraph ( below textbox)
+
+4) generate an array with value [10,20,30,40,50,60,70] and do the sum using reduce() function of javascript
+
+5) generate an array with value [1,2,3,4] and show the result as new array=> [1,4,9,16] using for in loop , forEach loop and map() function 
+
+6) generate an array with value [1,4,6,8,12,11,13] and show the resuke as new array=> [1,11,13] using filter() function of javascript
+
+7) generate an example to show the difference between parseInt() & Number() function (Hint: take any value as an input)
+
+8) create a custom function having name calculate() and pass 2 parameter (e.g: 10,20 ) within function & do the multiplication process.
+show the result in console. (Hint: use pass by value)
+
+9) how to create an array using ( new Array() functionality ) in javascript?
+please write down sample code with some value in array.
+
+10) create an object ( custom object  ) in javascript with key (name,age,location ) with any value . show the result in console
+
+11) on button click apply background color to body tag
+
+12) on mousemove event get x coordinate & y coordinate , and show the result in paragraph.
+
+13) create a textbox, enter dummy content and use onkeyup event to show 2 result:
+	a) data in capital case ( in paragraph having id para1)
+	b) data in small case ( in paragraph having id para2)
+
+14) create a paragraph , on mouseover apply background color (grey) & onmouseout apply background color (lightgrey)
+
+15) generate a function name calculate (Note: here you must have anonymous function instead of regular function ).
+print dummy text in console.
+
+a) call the same function using onblur event ( here use textbox )
+b) call the same function using onfocus event ( here use textbox )

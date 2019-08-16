@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		displayDate = ()=>{
+			var data = new Date();
+			document.querySelector('#para').innerHTML=data.toDateString();	
+		}
+		
+	</script>
+</head>
+<body onload="displayDate()">
+	<p id="para"></p>
+</body>
+</html>

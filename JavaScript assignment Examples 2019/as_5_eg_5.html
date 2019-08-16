@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		convertTemp = ()=>{
+			var data = document.getElementById('celsius').value;
+			data = parseInt(data);
+			data = (data *9/5)+32;
+
+			document.getElementById('output').innerHTML+=data;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="celsius" placeholder="Enter temperature in degree">
+	<button onclick="convertTemp()">Enter</button>
+	<hr>
+	<p id="output">
+		The temperature is :- 
+	</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		displayExtension = ()=>{
+			var data = document.querySelector("#file1").value;
+			var f_data = data.split(".");
+			data = "."+f_data[1];
+			document.getElementById('para').innerHTML = data;
+		}
+	</script>
+</head>
+<body>
+	<input type="file" id="file1">
+	<button onclick="displayExtension()"> Click </button>
+	<hr>
+	<p id="para"></p>
+</body>
+</html>

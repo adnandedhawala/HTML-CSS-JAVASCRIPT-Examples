@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var arr = [];
+		addVal=()=>{
+			arr.push(document.getElementById('txt').value);
+		}
+		checkArray = ()=>{
+			console.log(arr);
+			arr.sort((a,b)=>{return a-b;});
+			alert ("second smallest number is :- "+ arr[1]);
+			alert ("second greatest number is :- "+ arr[arr.length -2]);
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="txt">
+	<button onclick="addVal()">Enter</button>
+	<hr>
+	<button onclick="checkArray()">Click here to get answer</button>
+</body>
+</html>

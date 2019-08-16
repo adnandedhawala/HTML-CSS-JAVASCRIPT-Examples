@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		checktxt=function(){
+			var data = document.getElementById('txt').value;
+			var mat = /^[A-Za-Z]+$/;
+
+			if(data.match(mat)){
+				document.getElementById('para').innerHTML="validated";
+			}else{
+				document.getElementById('para').innerHTML="invalid mobile number";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="checktxt()">Click</button>
+	<hr>
+	<p id="para"></p>
+
+</body>
+</html>

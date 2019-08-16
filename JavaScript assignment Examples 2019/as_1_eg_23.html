@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		displaytxt=function(){
+			var data1= document.getElementById('txt1').value;
+			var data2= document.getElementById('txt2').value;
+
+			document.getElementById('dis').innerHTML = data1+data2;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1">
+	<input type="text" id="txt2">
+
+	<button onclick="displaytxt()">Click</button>
+
+	<p id="dis"></p>
+</body>
+</html>

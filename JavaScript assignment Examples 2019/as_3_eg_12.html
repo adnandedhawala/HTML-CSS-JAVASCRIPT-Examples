@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			height: 600px;
+			width: 300px;
+			border: 1px solid black;
+
+		}
+	</style>
+	<script type="text/javascript">
+		
+		giveposition=function(event){
+			var datax = event.clientX;
+			var datay = event.clientY;
+
+
+			document.getElementById('para').innerHTML = datax+"/"+datay;
+
+		}
+			// alert(datax);
+
+	</script>
+</head>
+<body onmousemove="giveposition(event)">
+	<div >
+	<p id="para"></p>
+		
+	</div>
+</body>
+</html>

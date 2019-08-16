@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		displaytxt=function(){
+			var data= document.getElementById('txt').value;
+			if(data.match(/^[0-9]+$/)){
+				alert("number");
+			}else{
+				alert("string")
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="displaytxt()">Click</button>
+</body>
+</html>
+
+<!-- not solved by using NaN-->

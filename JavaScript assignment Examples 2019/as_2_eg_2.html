@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		datafunc=function(){
+			var data=document.getElementById('txt').value;
+			if(!data.match(/^[0-9]+$/)){
+				alert("error! Please enter a number");
+			}else{
+				var data2=Math.pow(data,2);
+				document.getElementById('para').innerHTML=data2;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="datafunc()">Enter</button>
+	<hr>
+	<p id="para"></p>
+
+</body>
+</html>

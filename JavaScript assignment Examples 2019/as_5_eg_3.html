@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		displayDate = ()=>{
+			var data = new Date();
+			var m_data = data.getDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear()+" "+data.getHours()+":"+data.getMinutes()+":"+data.getSeconds();
+			document.querySelector('#para').innerHTML = m_data;	
+		}
+		
+	</script>
+</head>
+<body onload="displayDate()">
+	<p id="para"></p>
+</body>
+</html>
+
+<!-- Output : 22/7/2019 10:05:00 -->

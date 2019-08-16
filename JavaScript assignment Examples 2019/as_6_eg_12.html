@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var ans = [];
+		var arr = [];
+		addNames = ()=>{
+			var data = document.getElementById('txt').value;
+			arr.push(data);
+			document.getElementById('txt').value = "";
+		}
+		checkWords = ()=>{
+			var temp;
+			arr.forEach((item,index)=>{
+				ans[index] = item.length;
+			});	
+			temp = ans[0];
+			for(var i= 1;i<ans.length;i++){
+				if(ans[i]>temp){
+					temp=ans[i];
+				}
+			}
+			var index = ans.indexOf(temp);
+			console.log(arr);
+			alert(arr[index]);
+		}
+
+
+	</script>
+</head>
+<body>
+	<input type="text" id="txt" size="100" placeholder="Enter names">
+	<button onclick="addNames()">Enter</button>
+	<hr>
+	<button onclick="checkWords()">Click here to get longest name</button>
+</body>
+</html>

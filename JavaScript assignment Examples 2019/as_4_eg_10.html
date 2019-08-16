@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var myvar;
+		displayData = ()=>{
+			var data = document.getElementById('txt').value;
+			myvar = setInterval(()=>{
+				document.getElementById('para').innerHTML += data +"<br>";
+			},1000);
+		}
+		clearData = ()=>{
+			clearInterval(myvar);
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt">
+	<button onclick="displayData()"> Start </button>
+	<button onclick="clearData()"> STOP </button>
+
+	<hr>
+	<p id="para"></p>
+	
+</body>
+</html>

@@ -1,0 +1,23 @@
+Javascript Exercise:
+
+1) create a textbox ( id ="txt" ) , get value from the textbox & check whether the value  is string or number ( hint: use isNaN() function )
+
+2) create 3 paragraph ( having same class = "para" ). select these elements using getElementsByClassName() . apply different background color to individual elements
+
+3) create 2 paragraph ( having same id = "para" with dummy content ). change paragraph value on button click (hint: use innerText, innerHTML). here identify  which paragraph is getting affected. ( or prove that id is unique in a page ) 
+
+4) generate 3 h1 tag . change color , content & background color ( respectively ). use button click to do the process. use getElementsByTag() method
+
+5) create 3 textbox & change value of individual textbox using getElementsByName() , use onclick event with button
+
+6) create 2 textbox , get value from one text box (having class="txt1") and store in 2nd textbox. (having id="txt2") .  use button click
+(hint: use querySelector() function )
+
+7) create a textbox having id =" txt". on button click attach onmouseover event on textbox. after attachment do mouse over on textbox and print dummy text in console.
+
+8) on button click show current date in paragraph.
+
+9) get value from text box on button click & show textbox data in paragraph after 3 sec delay
+
+10) get value from text box on button click & show textbox data in paragraph in every interval (i.e. in every one second continuously).
+

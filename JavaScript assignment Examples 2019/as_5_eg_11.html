@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var data = [];
+		var arr = ["hello","hello world","how are you everyone"];
+		arr.forEach((value,index)=>{
+			data[index] = value.length;
+		})
+		console.log(data);
+		var ans = findNumber(data);
+		var f_ans = data.indexOf(ans);
+
+		alert(arr[f_ans]);
+
+		function findNumber(a){
+			var temp = a[0];
+			for(var i=0;i<a.length;i++){
+				if(a[i]>temp){
+					temp = a[i];
+				}
+			}
+			return temp;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
