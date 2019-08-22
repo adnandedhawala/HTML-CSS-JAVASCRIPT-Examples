@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="txt">
+    <button id="btn">Enter</button>
+    <select id="select-tab">
+        <option value="">Select a Value</option>
+
+    </select>
+
+
+    <script>
+        // console.log(localStorage.key(0));
+        if (localStorage.key(0) == null) {
+            localStorage.setItem("count", 1);
+        }
+        getData = (index) => {
+            // let data = index.toString;
+            return localStorage.getItem(index);
+        }
+        storeData = (index, value) => {
+            localStorage.setItem(index, value);
+        }
+        setData = () => {
+            document.getElementById('select-tab').innerHTML = "";
+            for (let i = 1; i <= localStorage.length - 1; i++) {
+                let data = getData(i);
+                let optionData = "<option>" + data + "</option>"
+                document.getElementById('select-tab').innerHTML += optionData;
+            }
+        }
+        // var arr = [];
+        var count = getData("count");
+        console.log(count);
+
+        document.getElementById('btn').addEventListener('click', () => {
+            let flag = false;
+            let data = document.getElementById('txt').value;
+            if (data == "") {
+                alert("Enter Valid Data!");
+            } else {
+                storeData(count, data);
+                count++;
+                storeData("count", count);
+                document.getElementById('txt').value = "";
+
+            }
+            // document.getElementById('select-tab').innerHTML += "";
+            setData();
+        });
+        document.getElementById('select-tab').addEventListener('onload',setData());
+        // setData();
+    </script>
+</body>
+
+</html>
