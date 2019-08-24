@@ -195,39 +195,60 @@
                 userMobile.value = '';
                 userName.value = '';
             }
-            deleteData = (event) => {
-                flag = confirm("Do you want to delete this entry?");
-                if (flag) {
-                    let tr_id = event.getAttribute("for");
-                    document.getElementById(tr_id).style.display = "none";
-                }
-
-            }
-            editData = (event) => {
-                let tr_id = event.getAttribute("for");
-                let id_number = event.getAttribute("count");
-                let name_id = "td-name-" + id_number;
-                let mobile_id = "td-mobile-" + id_number;
-                let name_data = document.getElementById(name_id).innerText;
-                let mobile_data = document.getElementById(mobile_id).innerText;
-                document.getElementById('user_name').value = name_data;
-                document.getElementById('user_mobile').value = mobile_data;
-                document.getElementById('btn-add').style.display = "none";
-                document.getElementById('btn-update').style.display = "block";
-                temp_mobile_id = mobile_id;
-                temp_name_id = name_id;
-                // flag = true;
-            }
-            document.getElementById('btn-update').addEventListener('click', function () {
-                let nameData = document.getElementById('user_name').value;
-                let mobileData = document.getElementById('user_mobile').value;
-                document.getElementById(temp_name_id).innerText = nameData;
-                document.getElementById(temp_mobile_id).innerText = mobileData;
-                nameData = '';
-                mobileData = '';
-            })
-
         });
+        deleteData = (event) => {
+            flag = confirm("Do you want to delete this entry?");
+            if (flag) {
+                let tr_id = event.getAttribute("for");
+                document.getElementById(tr_id).style.display = "none";
+            }
+
+        }
+        editData = (event) => {
+            let tr_id = event.getAttribute("for");
+            let id_number = event.getAttribute("count");
+            let name_id = "td-name-" + id_number;
+            let mobile_id = "td-mobile-" + id_number;
+            let name_data = document.getElementById(name_id).innerText;
+            let mobile_data = document.getElementById(mobile_id).innerText;
+            document.getElementById('user_name').value = name_data;
+            document.getElementById('user_mobile').value = mobile_data;
+            document.getElementById('btn-add').style.display = "none";
+            document.getElementById('btn-update').style.display = "block";
+            temp_mobile_id = mobile_id;
+            temp_name_id = name_id;
+            // flag = true;
+        }
+        document.getElementById('btn-update').addEventListener('click', function () {
+
+            let nameData = document.getElementById('user_name');
+            let mobileData = document.getElementById('user_mobile');
+
+            if (!validateName(nameData.value)) {
+                nameData.style.border = "1px solid red";
+                setSpan("error_name", error_name);
+            } else {
+                nameData.style.border = "1px solid black";
+                resetSpan("error_name");
+            }
+            if (!validateMobile(mobileData.value)) {
+                mobileData.style.border = "1px solid red";
+                setSpan("error_mobile", error_mobile);
+            } else {
+                mobileData.style.border = "1px solid black";
+                resetSpan("error_mobile");
+            }
+            if (validateName(nameData.value) && validateMobile(mobileData.value)) {
+                // alert("ok");
+                document.getElementById(temp_name_id).innerText = nameData.value;
+                document.getElementById(temp_mobile_id).innerText = mobileData.value;
+                nameData.value = '';
+                mobileData.value = '';
+                document.getElementById('btn-add').style.display = "block";
+                document.getElementById('btn-update').style.display = "none";
+            }
+
+        })
     </script>
 </body>
 
